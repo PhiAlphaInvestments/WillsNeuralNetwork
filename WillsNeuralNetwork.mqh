@@ -97,7 +97,7 @@ double WillsNeuralNetwork::Prediction(void){
    
    //Print("yHat = ",yHat);
    
-   return m_yHat[0][0];
+   return pred_yHat[0][0];
 
 
 }
