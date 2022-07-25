@@ -207,7 +207,7 @@ void WillsNeuralNetwork::UpdateValues(int shift){
    m_pred_input.Init(1,m_depth);
    
    for(int i=0; i<m_depth; i++){
-      m_input[0][i]= close[i];
+      m_pred_input[0][i]= close[i];
       }    
        
     y_cor = (Sgn(close[0]-close[1])+1)/2;
