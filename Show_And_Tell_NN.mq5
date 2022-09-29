@@ -18,7 +18,7 @@ input ENUM_TIMEFRAMES TimeFrame       = PERIOD_H1;
 input int min                         = 50;
 input int number_of_neurons           = 15;
 input int history_depth               = 15;
-#include <WNN.mqh>
+#include <WillsNeuralNetwork.mqh>
 #include<Trade\Trade.mqh>
 #include <Trade\AccountInfo.mqh>
 #include <Trade\PositionInfo.mqh>
