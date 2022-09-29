@@ -31,7 +31,7 @@ CPositionInfo m_position;
 
 
 
-WNN WNN_2(_Symbol,TimeFrame,history_depth,number_of_neurons,.00000001);
+WillsNeuralNetwork WillsNeuralNetwork_2(_Symbol,TimeFrame,history_depth,number_of_neurons,.00000001);
 
 
 
@@ -104,9 +104,9 @@ void OnTick()
      
    if(stm.min==1){
    
-        WNN_2.Train(0);
+        WillsNeuralNetwork_2.Train(0);
        
-        double Pred = WNN_2.Prediction(); 
+        double Pred = WillsNeuralNetwork_2.Prediction(); 
         Print(Pred);
         
    if(Pred <.5 && TradeTracker && TimeCheck==1   ){
